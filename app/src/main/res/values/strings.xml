@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">School Management</string>
+    <string name="select_product_type">Select Month</string>
+    <string name="open_Drawer">open_drawer</string>
+    <string name="close_Drawer">close_drawer</string>
+
+</resources>

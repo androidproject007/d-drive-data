@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Material"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"
+            />
+        <ImageView
+            android:id="@+id/home"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/home" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/plus_blue"
+            />
+    </FrameLayout>
+
+<!--  <androidx.cardview.widget.CardView-->
+<!--      android:layout_margin="@dimen/_5sdp"-->
+<!--      android:layout_width="wrap_content"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      app:cardCornerRadius="@dimen/_8sdp"-->
+<!--      app:cardElevation="@dimen/_2sdp">-->
+<!--      <LinearLayout-->
+<!--          android:layout_width="wrap_content"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:orientation="vertical">-->
+
+<!--          <TextView-->
+<!--              android:layout_width="wrap_content"-->
+<!--              android:layout_height="wrap_content"-->
+<!--              android:text="Add Material"-->
+<!--              android:textStyle="bold"-->
+<!--              android:textSize="@dimen/_10sdp"-->
+<!--              android:textColor="@color/black_color"-->
+<!--              android:padding="@dimen/_8sdp"-->
+<!--              android:fontFamily="@font/roboto_bold"/>-->
+<!--      </LinearLayout>-->
+<!--  </androidx.cardview.widget.CardView>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/chapter_all_matrial">
+    </androidx.recyclerview.widget.RecyclerView>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_below="@+id/chapter_all_matrial"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/teachers_all_matrial">
+  </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

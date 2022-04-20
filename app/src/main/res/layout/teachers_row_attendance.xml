@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_border_rectangele"
+        android:padding="@dimen/_8sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:weightSum="2">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+        </TextView>
+
+        <RadioGroup
+            android:layout_weight="1"
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Present"
+                android:id="@+id/present"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="@dimen/_12sdp" />
+            <RadioButton
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absent"
+                android:id="@+id/absent"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="@dimen/_12sdp"
+              />
+
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

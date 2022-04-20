@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:orientation="vertical">
+
+   <LinearLayout
+        android:background="@color/orange_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:orientation="vertical">
+
+      <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+          <TextView
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject Name"
+            android:id="@+id/subject_name"
+            android:textColor="@color/blue_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/hotpizza"
+           />
+
+       <ImageView
+           android:layout_width="@dimen/_25sdp"
+           android:layout_height="@dimen/_25sdp"
+           android:layout_marginRight="@dimen/_20sdp"
+           android:layout_toLeftOf="@+id/delete"
+           android:src="@drawable/edit">
+       </ImageView>
+
+       <ImageView
+               android:id="@+id/delete"
+               android:layout_alignParentRight="true"
+               android:layout_width="@dimen/_25sdp"
+               android:layout_height="@dimen/_25sdp"
+               android:layout_marginBottom="@dimen/_5sdp"
+               android:src="@drawable/delete">
+        </ImageView>
+   </RelativeLayout>
+
+              <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/red_new">
+              </View>
+
+       <TextView
+             android:id="@+id/topic_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Topic Name"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:textColor="@color/fontcolor"
+            android:padding="@dimen/_5sdp">
+        </TextView>
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:textColor="@color/fontcolor"
+            android:padding="@dimen/_5sdp">
+         </TextView>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10/2/2021"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:textColor="@color/fontcolor"
+            android:padding="@dimen/_5sdp">
+        </TextView>
+
+  </LinearLayout>
+
+</androidx.cardview.widget.CardView>

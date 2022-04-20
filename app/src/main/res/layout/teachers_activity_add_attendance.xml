@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attandance"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"
+            />
+      <ImageView
+            android:id="@+id/home"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/home" />
+    </RelativeLayout>
+
+  <LinearLayout
+    android:layout_below="@+id/header"
+    android:id="@+id/lv1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2">
+
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_shap"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_2sdp">
+             <EditText
+                 android:id="@+id/date_select"
+                 android:layout_marginLeft="@dimen/_5sdp"
+                 android:layout_marginRight="@dimen/_5sdp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:hint="Select Date"
+                 android:padding="@dimen/_6sdp"
+                 android:textSize="@dimen/_12sdp"
+                 android:textColor="@color/black"
+                 android:background="@null"
+                 />
+      </LinearLayout>
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:background="@drawable/edittext_shap"
+              android:layout_margin="@dimen/_5sdp"
+              android:padding="@dimen/_2sdp">
+
+              <Spinner
+                  android:id="@+id/select_calss"
+                  style="@style/Widget.AppCompat.Spinner"
+                  android:layout_marginLeft="@dimen/_5sdp"
+                  android:layout_marginRight="@dimen/_5sdp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:padding="@dimen/_4sdp"
+                  android:prompt="@string/select_product_type"
+                  android:spinnerMode="dropdown" />
+
+          </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:background="@drawable/edittext_shap"
+              android:layout_margin="@dimen/_5sdp"
+              android:padding="@dimen/_2sdp">
+
+              <Spinner
+                  android:id="@+id/select_division"
+                  style="@style/Widget.AppCompat.Spinner"
+                  android:layout_marginLeft="@dimen/_5sdp"
+                  android:layout_marginRight="@dimen/_5sdp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:padding="@dimen/_4sdp"
+                  android:prompt="@string/select_product_type"
+                  android:spinnerMode="dropdown" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:background="@drawable/edittext_shap"
+              android:layout_margin="@dimen/_5sdp"
+              android:padding="@dimen/_2sdp">
+              <EditText
+                  android:id="@+id/serach"
+                  android:layout_marginLeft="@dimen/_5sdp"
+                  android:layout_marginRight="@dimen/_5sdp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:hint="Search"
+                  android:padding="@dimen/_6sdp"
+                  android:textSize="@dimen/_12sdp"
+                  android:background="@null" />
+          </LinearLayout>
+      </LinearLayout>
+   </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@+id/send"
+        android:layout_below="@+id/lv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycelerview_add_attandance">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_date_gradient"/>
+
+</RelativeLayout>

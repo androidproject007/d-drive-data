@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+       <TextView
+           android:visibility="gone"
+            android:id="@+id/tv_header"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20sdp"
+            android:text="Inquiry"
+            android:textStyle="bold"
+           android:fontFamily="@font/famosa"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/light_blue">
+        </TextView>
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+              <EditText
+                  android:id="@+id/et_name"
+                  android:layout_margin="@dimen/_5sdp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/btn_border_rectangele"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_12sdp"
+                  android:inputType="text"
+                  android:padding="@dimen/_8sdp"
+                  android:hint="Enter Name"
+                  android:singleLine="true">
+              </EditText>
+              <EditText
+                  android:id="@+id/phone"
+                  android:layout_margin="@dimen/_5sdp"
+                  android:padding="@dimen/_8sdp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/btn_border_rectangele"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_12sdp"
+                  android:inputType="phone"
+                  android:hint="Enter Phone"
+                  android:singleLine="true">
+              </EditText>
+
+              <EditText
+                  android:id="@+id/bus_no"
+                  android:layout_margin="@dimen/_5sdp"
+                  android:padding="@dimen/_8sdp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/btn_border_rectangele"
+                  android:hint="Enter Bus No"
+                  android:textColor="@color/black"
+                  android:inputType="text"
+                  />
+
+              <EditText
+                  android:id="@+id/bus_time"
+                  android:layout_margin="@dimen/_5sdp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Enter Bus Time"
+                  android:textSize="@dimen/_12sdp"
+                  android:textColor="@color/black"
+                  android:background="@drawable/btn_border_rectangele"
+                  android:padding="@dimen/_8sdp"
+                  android:inputType="text">
+              </EditText>
+
+              <EditText
+                  android:id="@+id/route"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Bus Route"
+                  android:textColor="@color/black"
+                  android:inputType="text"
+                  android:textSize="@dimen/_12sdp"
+                  android:padding="@dimen/_8sdp"
+                  android:layout_margin="@dimen/_5sdp"
+                  android:background="@drawable/btn_border_rectangele">
+              </EditText>
+
+              <EditText
+                  android:id="@+id/note"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Note"
+                  android:textSize="@dimen/_12sdp"
+                  android:textColor="@color/black"
+                  android:textStyle="bold"
+                  android:inputType="text"
+                  android:padding="@dimen/_8sdp"
+                  android:layout_margin="@dimen/_5sdp"
+                  android:background="@drawable/btn_border_rectangele">
+
+              </EditText>
+
+<!--              <com.google.android.material.textfield.TextInputLayout-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                android:hint="Enter Name">-->
+<!--                  <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:inputType="text"-->
+<!--                    android:singleLine="true"-->
+<!--                    />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                android:hint="Enter mobile">-->
+
+<!--                 <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:inputType="phone"-->
+<!--                    android:singleLine="true"-->
+<!--                    />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--           <com.google.android.material.textfield.TextInputLayout-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                    android:hint="Enter Bus No">-->
+
+<!--             <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        android:inputType="phone"-->
+<!--                        android:singleLine="true"-->
+<!--                        />-->
+<!--           </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--           <com.google.android.material.textfield.TextInputLayout-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                    android:hint="Enter Bus Time">-->
+
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        android:inputType="text"-->
+<!--                        android:singleLine="true"-->
+<!--                        />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--             <com.google.android.material.textfield.TextInputLayout-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                    android:hint="Enter Bus Route">-->
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        android:inputType="text"-->
+<!--                        android:singleLine="true"-->
+<!--                        />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                    android:hint="Enter Note">-->
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        android:inputType="text"-->
+<!--                        android:singleLine="true"-->
+<!--                        />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_round"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"/>
+            </LinearLayout>
+<!--        </androidx.cardview.widget.CardView>-->
+
+    </LinearLayout>
+
+</RelativeLayout>
